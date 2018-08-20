@@ -22,7 +22,7 @@ public class PersonController{
         QPerson person = QPerson.person;
         OrderSpecifier[] orders = new OrderSpecifier[] {person.name.desc(), person.id.asc()};
         PersonVO vo = new PersonVO();
-        vo.setName("chen h");
+        //vo.setName("chen h");
         return personService.fetch(vo, orders);
     }
 
